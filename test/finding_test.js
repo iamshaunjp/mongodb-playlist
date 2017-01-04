@@ -18,7 +18,7 @@ describe('Finding records', function(){
   it('Finds a record from the database', function(done){
     MarioChar.findOne({name: 'Mario'}).then(function(result){
       assert(result.name === 'Mario');
-      done()
+      done();
     });
 
   });
