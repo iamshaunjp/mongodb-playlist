@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/3dw1nM0535/mongodb-playlist/issues"
   },
-  "homepage": "https://github.com/3dw1nM0535/mongodb-playlist#readme"
+  "homepage": "https://github.com/3dw1nM0535/mongodb-playlist#readme",
+  "dependencies": {
+    "mongoose": "^4.11.4"
+  }
 }
