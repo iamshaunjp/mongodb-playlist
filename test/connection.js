@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-
 mongoose.connect('mongodb://localhost/testaroo');
 
 mongoose.connection.once('open', function () {
