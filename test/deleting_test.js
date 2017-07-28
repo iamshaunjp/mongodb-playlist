@@ -12,7 +12,6 @@ describe('Delete records in the database', function () {
     });
 
     char.save().then(function () {
-      assert(char.isNew === false);
       done();
     });
 
