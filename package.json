@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/3dw1nM0535/mongodb-playlist#readme",
   "dependencies": {
+    "mocha": "^3.4.2",
     "mongoose": "^4.11.4"
   }
 }
