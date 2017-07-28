@@ -33,5 +33,5 @@ describe('Find records in the database', function () {
       assert(result._id.toString() === char._id.toString());
       done();
     });
-  })
+  });
 });
