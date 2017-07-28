@@ -1,4 +1,3 @@
-var mocha = require('mocha');
 var assert = require('assert');
 var MarioChar = require('../models/mariochar');
 
@@ -11,6 +10,7 @@ describe('Saving records', function () {
       name: 'Mario'
     });
 
+    //Save test using isNew() instance
     char.save().then(function () {
       assert(char.isNew === false);
       done();
