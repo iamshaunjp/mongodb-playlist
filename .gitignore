@@ -1,3 +1,6 @@
 /node_modules
+<<<<<<< HEAD
 /.vscode
 npm-debug.log*
+=======
+>>>>>>> master
