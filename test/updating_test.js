@@ -8,7 +8,8 @@ describe("Updating records in the database", function() {
   //Create record to database to delete
   beforeEach(function(done) {
     char = new MarioChar({
-      name: "Mario"
+      name: "Mario",
+      weight: 50
     });
 
     char.save().then(function() {
@@ -24,6 +25,16 @@ describe("Updating records in the database", function() {
     ).then(function() {
       MarioChar.findOne({ _id: char._id }).then(function(result) {
         assert(result.name === "Mike");
+        done();
+      });
+    });
+  });
+
+  //Update/Increment weight by 1
+  it("Increment weight by 5", function(done) {
+    MarioChar.update({}, { $inc: { weight: 5 } }).then(function() {
+      MarioChar.findOne({ name: "Mario" }).then(function(record) {
+        assert(record.weight === 55);
         done();
       });
     });
