@@ -1,11 +1,19 @@
 var mocha = require('mocha');
 var assert = require('assert');
+var MarioChar = require('../models/mariochar');
 
 //Describe test
-describe('Some demo test', function () {
+describe('Saving records', function () {
 
   //Create test
-  it('Adds two numbers', function () {
-    assert(3 + 4 === 7);
+  it('Saving records to database', function (done) {
+    var char = new MarioChar({
+      name: 'Mario'
+    });
+
+    char.save().then(function () {
+      assert(char.isNew === false);
+      done();
+    });
   });
 });
