@@ -1,24 +1,41 @@
 {
   "name": "mongodb-playlist",
   "version": "1.0.0",
+<<<<<<< HEAD
+  "description": "Course files for the MongoDB tutorials playlist on The Net Ninja YouTube channel. Each branch in this repository corresponds to the ending code of a particular video.",
+=======
   "description": "Course files for the MongoDB tutorials playlist on The Net Ninja YouTube channel.\r Each branch in this repository corresponds to the ending code of a particular video.",
+>>>>>>> master
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
+    "url": "git+https://github.com/3dw1nM0535/mongodb-playlist.git"
+=======
     "url": "git+https://github.com/iamshaunjp/mongodb-playlist.git"
+>>>>>>> master
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
+<<<<<<< HEAD
+    "url": "https://github.com/3dw1nM0535/mongodb-playlist/issues"
+  },
+  "homepage": "https://github.com/3dw1nM0535/mongodb-playlist#readme",
+  "dependencies": {
+    "mocha": "^3.4.2",
+    "mongoose": "^4.11.4"
+=======
     "url": "https://github.com/iamshaunjp/mongodb-playlist/issues"
   },
   "homepage": "https://github.com/iamshaunjp/mongodb-playlist#readme",
   "dependencies": {
     "mocha": "^3.2.0",
     "mongoose": "^4.7.5"
+>>>>>>> master
   }
 }
