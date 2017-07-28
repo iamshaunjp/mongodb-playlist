@@ -15,4 +15,11 @@ before(function (done) {
   });
 });
 
+//Drop db collection before each test
+beforeEach(function (done) {
+  mongoose.connection.collections.mariochars.drop(function () {
+    done();
+  });
+});
+
 
