@@ -11,6 +11,8 @@ const BookSchema = new Schema({
 const AuthorSchema = new Schema({
     name: String,
     books: [BookSchema]
+    }, {
+    usePushEach: true
 });
 
 const Author = mongoose.model('author', AuthorSchema);
